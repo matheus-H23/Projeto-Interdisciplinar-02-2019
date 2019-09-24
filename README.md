@@ -15,11 +15,10 @@ Em todos os temas, criar um objeto com os atributos de cada tema. Todas as opç�
 devem ser chamadas de métodos da classe. Criar um vetor de objetos para o cadastro dos itens
 
 ### 9 – Cadastro de livros
-- Informações presentes no cadastro: código do livro, título do livro, autor(es), categoria do
-livro (ex: administração, direito, etc), quantidade páginas, valor do livro, quantidade em estoque.
+Informações presentes no cadastro: código do livro, título do livro, autor(es), categoria do livro (ex: administração, direito, etc), quantidade páginas, valor do livro, quantidade em estoque.
   1.  Opção para cadastrar livros
   2.  Opção para editar todos os dados pelo código
   3.  Opção para listar todos os livros por uma categoria digitada
   4.  Opção para mostrar o livro com maior quantidade de páginas
-  5.  Opção para mostrar valor total dos Livros em estoque, ou seja, a quantidade em estoque                multiplicada pelo valor do Livro
+  5.  Opção para mostrar valor total dos Livros em estoque, ou seja, a quantidade em estoque multiplicada pelo valor do Livro
   6.  Opção para mostrar a média do valor de todos os livros
