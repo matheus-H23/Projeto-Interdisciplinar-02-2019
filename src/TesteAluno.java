@@ -22,6 +22,7 @@ public class TesteAluno {
             switch(digito){
 
                 case "1":
+                    aluno[position] = new Aluno();
                     System.out.println("\nCadastrar um novo aluno");
                     System.out.println("");
                     System.out.println("Insira o Nome do aluno: (Nome Completo)");
@@ -53,7 +54,7 @@ public class TesteAluno {
 
                 case "3":
                     System.out.println("\nInsira um RGM para alterar os dados: ");
-                    rgm = scanner.nextLine();
+                    rgm = scanner.next();
                     for (int i = 0; i < aluno.length; i++) {
                         if(aluno[i] != null){
                             if(aluno[i].getRgm().equals(rgm)) {
@@ -84,6 +85,7 @@ public class TesteAluno {
                         System.out.println("=============================");
                     }
                     break;
+                    
                 case "4":
                     System.out.println("\nInsira um RGM: ");
                     rgm = scanner.next();
@@ -98,22 +100,22 @@ public class TesteAluno {
                     break;
 
                 case "5":
-                System.out.println("\nInsira um Curso: ");
-                curso = scanner.next();
-                retorno = Aluno.pesquisaCurso(aluno, curso);
-                System.out.println("\nAlunos: ");
-                for (int i = 0; i < retorno.length; i++) {
-                    if (retorno[i] != null) {
-                        retorno[i].listAlunos();
-                        alterou = true;
+                    System.out.println("\nInsira um Curso: ");
+                    curso = scanner.next();
+                    retorno = Aluno.pesquisaCurso(aluno, curso);
+                    System.out.println("\nAlunos: ");
+                    for (int i = 0; i < retorno.length; i++) {
+                        if (retorno[i] != null) {
+                            retorno[i].listAlunos();
+                            alterou = true;
+                        }
                     }
-                }
-                if(!alterou){
-                    System.out.println("\n=================================");
-                    System.out.println("Nenhum aluno matriculado no Curso!");
-                    System.out.println("===================================");
-                }
-                break;
+                    if(!alterou){
+                        System.out.println("\n=================================");
+                        System.out.println("Nenhum aluno matriculado no Curso!");
+                        System.out.println("===================================");
+                    }
+                    break;
         
                 case "6":
                     System.out.println("\nInsira um Curso: ");

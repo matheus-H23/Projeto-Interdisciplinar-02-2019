@@ -85,7 +85,7 @@ public class Aluno {
         this.semestre = semestre;
         this.idade = idade;
         this.media = media;
-        return "Aluno criado com sucesso";
+        return "\nAluno criado com sucesso";
     }
 
     public void tableAlunos(){
