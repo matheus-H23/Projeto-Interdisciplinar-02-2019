@@ -44,6 +44,9 @@ public class TesteAluno {
                     break;
 
                 case "2":
+                    System.out.println("===================================");
+                    System.out.println("  Listagem de Alunos");
+                    System.out.println("===================================");
                     for(int i = 0; i < aluno.length; i++){
                         if(aluno[i] != null){
                             aluno[i].listAlunos();
